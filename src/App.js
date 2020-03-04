@@ -48,4 +48,4 @@ const signUpConfig = {
   usernameAttributes: 'email' 
 };
 
-export default withAuthenticator(App, { signUpConfig });
+export default withAuthenticator(App, true);
