@@ -32,4 +32,20 @@ function App() {
   );
 }
 
-export default withAuthenticator(App, true);
+const signUpConfig = {
+  header: 'My Customized Sign Up',
+  hideAllDefaults: true,
+  defaultCountryCode: '1',
+  signUpFields: [
+    {
+      label: 'My custom email label',
+      key: 'email',
+      required: true,
+      displayOrder: 1,
+      type: 'string'
+    },
+  ],
+  usernameAttributes: 'email' 
+};
+
+export default withAuthenticator(App, { signUpConfig });

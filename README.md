@@ -25,3 +25,8 @@ Initialise a project, execute the command within the root of our project.
 ```
 awsmobile init 
 ```
+
+Add auth
+```
+amplify add auth
+```
