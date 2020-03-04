@@ -1,7 +1,4 @@
 # aws-amplify-study
-## Reference 
-  AWS for Developers: AWS AppSync with GraphQL
-
 
 
 ## Setup
@@ -30,3 +27,7 @@ Add auth
 ```
 amplify add auth
 ```
+
+
+
+
