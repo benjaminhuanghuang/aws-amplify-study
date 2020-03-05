@@ -1,1 +1,26 @@
-{}
+{
+	"auth": {
+		"awsamplifystudy9bac734c": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"api": {
+		"benAmplifyStudy": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authawsamplifystudy9bac734c"
+						}
+					}
+				}
+			}
+		}
+	}
+}
