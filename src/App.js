@@ -111,14 +111,14 @@ class App extends Component {
   //   // this.setState({ notes: updatedNotes, note: "", id: "" });
   // };
 
-  // handleDeleteNote = async noteId => {
-  //   // const { notes } = this.state;
-  //   const input = { id: noteId };
-  //   await API.graphql(graphqlOperation(deleteNote, { input }));
-  //   // const deletedNoteId = result.data.deleteNote.id;
-  //   // const updatedNotes = notes.filter(note => note.id !== deletedNoteId);
-  //   // this.setState({ notes: updatedNotes });
-  // };
+  handleDeleteNote = async noteId => {
+    // // const { notes } = this.state;
+    // const input = { id: noteId };
+    // await API.graphql(graphqlOperation(deleteNote, { input }));
+    // // const deletedNoteId = result.data.deleteNote.id;
+    // // const updatedNotes = notes.filter(note => note.id !== deletedNoteId);
+    // // this.setState({ notes: updatedNotes });
+  };
 
   // handleSetNote = ({ note, id }) => this.setState({ note, id });
 
